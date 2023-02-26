@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
 import APICard from "./APICard";
 
 
 function APIList() {
   const [apiList, setApiList] = useState([]);
+  const { category } = useParams();
 
   useEffect(() => {
     fetch("https://api.publicapis.org/entries")
@@ -12,11 +14,14 @@ function APIList() {
         setApiList(data.entries);
       });
   }, []);
-  console.log(apiList)
+
+  const filteredList = category ? apiList.filter((api) => {
+    return api.Category === category;
+  }) : apiList;
 
   return (
     <div>
-      {apiList.map((api) => {
+      {filteredList.map((api) => {
         return (
           <APICard key={api.Link} api={api} />
         );
