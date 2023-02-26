@@ -1,0 +1,12 @@
+.apicard {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  max-width: 700px;
+}
+
+.apicard:hover {
+  box-shadow: 0 0 10px #ccc;
+
+}

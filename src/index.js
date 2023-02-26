@@ -3,11 +3,22 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import APIList from './components/APIList';
+// import Categories from './components/Categories';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <Routes>
+        <Route element={<App />}>
+          <Route path='/' element={<APIList />} />
+          {/* <Route path='/categories' element={<Categories />} /> */}
+          {/* <Route path='/categories/:category' element={<Categories />} /> */}
+        </Route>
+      </Routes>
+    </Router>
   </React.StrictMode>
 );
 
