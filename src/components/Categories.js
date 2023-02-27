@@ -1,14 +1,25 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import CategoriesCard from "./CategoriesCard";
 
 
-function Categories({ categoriesList }) {
+function Categories({ apiList, categoriesList }) {
+  // count the number of APIs in each category
+  const categories = [];
+  categoriesList.forEach((category) => {
+    let count = 0;
+    apiList.forEach((api) => {
+      if (api.Category === category) {
+        count++;
+      }
+    });
+    categories.push([category, count]);
+  });
 
   return (
     <div>
-      {categoriesList.map((api) => {
+      {categories.map((category) => {
         return (
-          <CategoriesCard key={api} api={api} />
+          <CategoriesCard key={category[0]} category={category[0]} count={category[1]} />
         );
       })}
     </div>

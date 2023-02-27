@@ -8,6 +8,7 @@ function Navbar() {
       <h3>PUBLIC APIs</h3>
       <section className="navbar-links">
         <Link to={'/'}>Home</Link>
+        <Link to={'/godlist'}>Godlist</Link>
         <Link to={'/categories'}>Categories</Link>
       </section>
     </div>

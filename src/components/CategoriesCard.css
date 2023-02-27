@@ -1,10 +1,23 @@
-.categoriescard a {
+.categoriescard {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  width: 450px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.2s ease-out;
   text-decoration: none;
   color: #ccc;
   cursor: pointer;
   transition: all 0.2s ease-out;
 }
 
-.categoriescard a:hover {
-  color: rgb(0, 251, 255)
+
+.categoriescard:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
 }

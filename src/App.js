@@ -34,7 +34,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/godlist' element={<APIList apiList={apiList} />} />
-          <Route path='/categories' element={<Categories categoriesList={categoriesList} />} />
+          <Route path='/categories' element={<Categories apiList={apiList} categoriesList={categoriesList} />} />
           <Route path='/categories/:category' element={<APIList apiList={apiList} />} />
         </Routes>
       </main>
