@@ -1,9 +1,10 @@
-a {
+.categoriescard a {
   text-decoration: none;
-  color: #fff;
+  color: #ccc;
   cursor: pointer;
+  transition: all 0.2s ease-out;
 }
 
-a:hover {
+.categoriescard a:hover {
   color: rgb(0, 251, 255)
 }

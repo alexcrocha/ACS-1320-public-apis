@@ -7,8 +7,8 @@ function APICard({ api }) {
     <div className="apicard">
       <h2>{api.API}</h2>
       <p>{api.Description}</p>
-      <p>{api.Link}</p>
-      <p>{api.Category}</p>
+      <p><small>{api.Category}</small></p>
+      <a href={api.Link} target="_blank">Go to API</a>
     </div>
   )
 }
