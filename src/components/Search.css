@@ -1,0 +1,13 @@
+.search {
+  background-color: #f5f5f5;
+  width: 60%;
+  margin: 2em auto 1em auto;
+}
+
+.search input {
+  font-size: 1em;
+  padding: 0.5em;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+}

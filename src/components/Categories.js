@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import CategoriesCard from "./CategoriesCard";
-
+import "./Categories.css";
+import Search from "./Search";
 
 function Categories({ apiList, categoriesList }) {
-  // count the number of APIs in each category
-  const categories = [];
+  const [searchInput, setSearchInput] = useState("");
+
+  let categories = [];
   categoriesList.forEach((category) => {
     let count = 0;
     apiList.forEach((api) => {
@@ -15,14 +17,24 @@ function Categories({ apiList, categoriesList }) {
     categories.push([category, count]);
   });
 
+  if (searchInput !== "") {
+    categories = categories.filter((category) =>
+      category[0].toLowerCase().includes(searchInput.toLowerCase()))
+      .map((category) => category);
+  }
+
   return (
-    <div>
+
+    <>
+      <Search searchInput={searchInput} setSearchInput={setSearchInput} />
+      <div className="categories">
       {categories.map((category) => {
         return (
           <CategoriesCard key={category[0]} category={category[0]} count={category[1]} />
         );
       })}
-    </div>
+      </div>
+    </>
   );
 }
 

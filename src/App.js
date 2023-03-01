@@ -15,7 +15,11 @@ function App() {
     fetch("https://api.publicapis.org/entries")
       .then((response) => response.json())
       .then((data) => {
-        setApiList(data.entries);
+        const treatedData = data.entries.map((api) => {
+          api.Auth = api.Auth === "" ? "None" : api.Auth;
+          return api;
+        });
+        setApiList(treatedData);
       });
 
     fetch("https://api.publicapis.org/categories")
@@ -24,6 +28,8 @@ function App() {
         setCategoriesList(data.categories);
       });
   }, []);
+
+
 
   return (
     <div className="App">
@@ -39,7 +45,7 @@ function App() {
         </Routes>
       </main>
       <footer className="App-footer">
-        <p>Created by Alex</p>
+        <p>Made with <small>❤️</small> by <a href='https://github.com/alexcrocha'>Alex C Rocha</a></p>
       </footer>
 
     </div>

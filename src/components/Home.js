@@ -9,7 +9,7 @@ function Home() {
         A collective list of public APIs for use in software and web development.
       </p>
       <section className="home-links">
-        <Link to={'/godlist'}>APIs Godlist</Link>
+        <Link to={'/godlist'}>API Godlist</Link>
         <Link to={'/categories'}>Categories</Link>
       </section>
     </div>
