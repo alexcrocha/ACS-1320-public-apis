@@ -6,10 +6,9 @@
   background-color: #ffffffcc;
   border-bottom: 1px solid #ccc;
   backdrop-filter: blur(5px);
-  /* box-shadow: 0 0 4px #ccc; */
   position: fixed;
   top: 0px;
-  z-index: 1000;
+  z-index: 1;
   width: 100%;
   color: #282c34;
   height: 60px;

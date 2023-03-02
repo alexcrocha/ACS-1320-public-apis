@@ -33,6 +33,7 @@ function App() {
 
   return (
     <div className="App">
+
       <header className="App-header">
         <Navbar />
       </header>
@@ -47,7 +48,6 @@ function App() {
       <footer className="App-footer">
         <p>Made with <small>❤️</small> by <a href='https://github.com/alexcrocha'>Alex C Rocha</a></p>
       </footer>
-
     </div>
   );
 }

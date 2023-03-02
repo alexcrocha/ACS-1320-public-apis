@@ -9,7 +9,11 @@
   font-size: calc(10px + 2vmin);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   width: 100%;
-  /* height: 100%; */
+}
+.home p {
+  margin-top: 2.5em;
+  padding: 0;
+
 }
 
 .home-links {

@@ -24,17 +24,19 @@ function Categories({ apiList, categoriesList }) {
   }
 
   return (
-
-    <>
-      <Search searchInput={searchInput} setSearchInput={setSearchInput} />
-      <div className="categories">
-      {categories.map((category) => {
-        return (
-          <CategoriesCard key={category[0]} category={category[0]} count={category[1]} />
-        );
-      })}
-      </div>
-    </>
+    <section>
+      <header className="categories-header">
+        <Search searchInput={searchInput} setSearchInput={setSearchInput} />
+        <h2>Categories</h2>
+      </header>
+      <main className="categories-main">
+        {categories.map((category) => {
+          return (
+            <CategoriesCard key={category[0]} category={category[0]} count={category[1]} />
+          );
+        })}
+      </main>
+    </section>
   );
 }
 
