@@ -5,7 +5,7 @@ import "./Navbar.css";
 function Navbar() {
   return (
     <div className="navbar">
-      <h3>PUBLIC APIs</h3>
+      <h3><Link to={'/'}>PUBLIC APIs</Link></h3>
       <section className="navbar-links">
         <Link to={'/'}>Home</Link>
         <Link to={'/godlist'}>Godlist</Link>

@@ -14,11 +14,12 @@
   height: 60px;
 }
 
+
 .navbar-links {
   margin-right: 35px;
 }
 
-.navbar-links a {
+.navbar a {
   text-decoration: none;
   color: #282c34;
   cursor: pointer;
