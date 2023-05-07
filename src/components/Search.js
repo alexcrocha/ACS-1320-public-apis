@@ -3,16 +3,19 @@ import "./Search.css";
 
 function Search({ searchInput, setSearchInput }) {
   return (
-    <div className="search">
+    <section className="search" role="search">
+      <label htmlFor="search-input" className="sr-only">Search</label>
       <input
+        id="search-input"
         type="text"
         placeholder="Search..."
         value={searchInput}
         onChange={(event) => {
           setSearchInput(event.target.value);
         }}
+        aria-label="Search API"
       />
-    </div>
+    </section>
   );
 }
 

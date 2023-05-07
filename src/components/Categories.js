@@ -24,19 +24,19 @@ function Categories({ apiList, categoriesList }) {
   }
 
   return (
-    <section>
+    <article>
       <header className="categories-header">
-        <Search searchInput={searchInput} setSearchInput={setSearchInput} />
+        <Search searchInput={searchInput} setSearchInput={setSearchInput} aria-label="Search categories" />
         <h2>Categories</h2>
       </header>
-      <main className="categories-main">
+      <main className="categories-main" role="list" aria-live="polite" aria-relevant="additions removals">
         {categories.map((category) => {
           return (
             <CategoriesCard key={category[0]} category={category[0]} count={category[1]} />
           );
         })}
       </main>
-    </section>
+    </article>
   );
 }
 

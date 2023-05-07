@@ -33,7 +33,6 @@ function App() {
 
   return (
     <div className="App">
-
       <header className="App-header">
         <Navbar />
       </header>
@@ -46,7 +45,7 @@ function App() {
         </Routes>
       </main>
       <footer className="App-footer">
-        <p>Made with <small>❤️</small> by <a href='https://github.com/alexcrocha' target='_blank'>Alex C Rocha</a></p>
+        <p>Made with <small aria-hidden="true">❤️</small><span className="sr-only">love</span> by <a href='https://github.com/alexcrocha' target='_blank' rel="noopener noreferrer">Alex C Rocha</a></p>
       </footer>
     </div>
   );

@@ -4,15 +4,15 @@ import "./Home.css";
 
 function Home() {
   return (
-    <div className="home">
-      <p>
+    <article className="home">
+      <h1>
         A collective list of public APIs for use in software and web development.
-      </p>
-      <section className="home-links">
-        <Link to={'/godlist'}>API Godlist</Link>
-        <Link to={'/categories'}>Categories</Link>
-      </section>
-    </div>
+      </h1>
+      <nav className="home-links" aria-label="Home page links">
+        <Link to={'/godlist'} aria-label="Go to API Godlist">API Godlist</Link>
+        <Link to={'/categories'} aria-label="Go to Categories">Categories</Link>
+      </nav>
+    </article>
   );
 }
 

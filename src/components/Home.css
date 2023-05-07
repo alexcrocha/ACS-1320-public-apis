@@ -6,14 +6,13 @@
   justify-content: center;
   height: 90vh;
   background-color: #282c34;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(7px + 1.5vmin);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   width: 100%;
 }
-.home p {
-  margin-top: 2.5em;
+.home h1 {
+  margin-top: 1.75em;
   padding: 0;
-
 }
 
 .home-links {

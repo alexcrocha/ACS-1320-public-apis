@@ -24,19 +24,19 @@ function APIList({ apiList }) {
 
 
   return (
-    <section>
+    <article>
       <header className="apilist-header">
-        <Search searchInput={searchInput} setSearchInput={setSearchInput} />
+        <Search searchInput={searchInput} setSearchInput={setSearchInput} aria-label="Search API" />
         <h2>{category ? category : "API Godlist"}</h2>
       </header>
-      <main className="apilist-main">
+      <main className="apilist-main" aria-live="polite" aria-relevant="additions removals">
       {filteredList.map((api) => {
         return (
           <APICard key={api.Link} api={api} />
         );
       })}
       </main>
-    </section>
+    </article>
   );
 }
 

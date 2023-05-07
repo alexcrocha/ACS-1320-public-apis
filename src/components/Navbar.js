@@ -4,14 +4,14 @@ import "./Navbar.css";
 
 function Navbar() {
   return (
-    <div className="navbar">
+    <nav className="navbar" aria-label="Main navigation">
       <h3><Link to={'/'}>PUBLIC APIs</Link></h3>
       <section className="navbar-links">
-        <Link to={'/'}>Home</Link>
-        <Link to={'/godlist'}>Godlist</Link>
-        <Link to={'/categories'}>Categories</Link>
+        <Link to={'/'} aria-label="Go to Home">Home</Link>
+        <Link to={'/godlist'} aria-label="Go to API Godlist">Godlist</Link>
+        <Link to={'/categories'} aria-label="Go to Categories">Categories</Link>
       </section>
-    </div>
+    </nav>
   );
 }
 

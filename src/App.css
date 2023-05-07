@@ -25,16 +25,20 @@
   backdrop-filter: blur(5px);
 }
 
-h1 {
-  font-family: 'verdana';
-  font-size: 3em;
-  margin: 4px;
-  padding: 0;
-  color: #ccc;
-}
-
 .App-footer a {
   text-decoration: none;
   color: #ccc;
   margin: 0 5px 0 0;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
