@@ -14,14 +14,14 @@ function Home() {
         <Link
           to={"/godlist"}
           aria-label="Go to API Godlist"
-          className="block w-full text-center bg-gray-800 text-white rounded-md flex-grow hover:bg-gray-700 transition-colors duration-300 text-2xl md:text-4xl"
+          className="block w-full text-center bg-gray-800 text-white rounded-md flex-grow hover:bg-gray-700 border border-gray-700 transition-colors duration-300 text-2xl md:text-4xl"
         >
           <span className="flex items-center justify-center h-full ">API Godlist</span>
         </Link>
         <Link
           to={"/categories"}
           aria-label="Go to Categories"
-          className="block w-full text-center bg-gray-800 text-white rounded-md flex-grow hover:bg-gray-700 transition-colors duration-300 text-2xl md:text-4xl"
+          className="block w-full text-center bg-gray-800 text-white rounded-md flex-grow hover:bg-gray-700 border border-gray-700 transition-colors duration-300 text-2xl md:text-4xl"
         >
           <span className="flex items-center justify-center h-full ">Categories</span>
         </Link>
